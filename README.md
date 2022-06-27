@@ -29,6 +29,6 @@ primary key(boardId)
 );
 
 
-//Create, Read, Update, Delete. (줄여서 CRUD 라고 부른다)
+//Create, Read, Update, Delete. CRUD 구현
 
 //작성시 /update 으로 직접 접속
