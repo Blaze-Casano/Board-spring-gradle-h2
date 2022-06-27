@@ -1,11 +1,13 @@
 # Board-spring-gradle-h2
 게시판 생성 테스트 
 
-//JDBC Port : 8070
+http://localhost:8070/board/main
 
-//http://localhost:8070/h2-console/ :: h2 DB 설정 주소
+JDBC Port : 8070
 
-//jdbc:h2:file:C:/Workspace/blaze-board/h2data :: DB 저장소
+http://localhost:8070/h2-console/ :: h2 DB 설정 주소
+
+jdbc:h2:file:C:/Workspace/blaze-board/h2data :: DB 저장소
 
 properties 에서 변경
 추가 Server.port = 8070
