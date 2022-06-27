@@ -1,11 +1,13 @@
 # Board-spring-gradle-h2
 게시판 생성 테스트 
-http://localhost:8070/boards/main
-//JDBC Port : 8070
 
-//http://localhost:8070/h2-console/ :: h2 DB 설정 주소
+http://localhost:8070/board/main
 
-//jdbc:h2:file:C:/Workspace/blaze-board/h2data :: 로컬 DB 저장소 경로
+JDBC Port : 8070
+
+http://localhost:8070/h2-console/ :: h2 DB 설정 주소
+
+jdbc:h2:file:C:/Workspace/blaze-board/h2data :: DB 저장소
 
 properties 에서 변경
 추가 Server.port = 8070
@@ -27,6 +29,6 @@ primary key(boardId)
 );
 
 
-//Create, Read, Update, Delete. 지원.
+//Create, Read, Update, Delete. (줄여서 CRUD 라고 부른다)
 
 //작성시 /update 으로 직접 접속
