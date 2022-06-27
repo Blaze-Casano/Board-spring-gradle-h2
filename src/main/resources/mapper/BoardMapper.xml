@@ -4,33 +4,41 @@
 <mapper namespace="Blaze.devBoard.Mapper.BoardMapper">
 
 
-    <select id="boardCount" resultType="int">
-        SELECT count(boardId) AS cnt FROM tbl_board
-    </select>
+	<select id="boardCount" resultType="int">
+		SELECT count(boardId) AS cnt FROM tbl_board
+	</select>
 
-    <select id="getList" resultType="Blaze.devBoard.domain.Board">
-        SELECT
-        *
-        FROM tbl_board
-    </select>
-    <select id="getBoard" parameterType="Long" resultType="Blaze.devBoard.domain.Board">
-        SELECT
-        *
-        FROM tbl_board where boardId=#{boardId};
-    </select>
-    <insert id="uploadBoard" parameterType="Blaze.devBoard.domain.Board">
-        INSERT INTO tbl_board (title, content, name)
-        VALUES
-        (#{title}, #{content}, #{name});
-    </insert>
-    <update id="updateBoard" parameterType="Blaze.devBoard.domain.Board">
-        UPDATE tbl_board
-        SET title=#{title}, content=#{content}
-        WHERE boardId=#{boardId};
-    </update>
-    <update id="viewCount">
-    UPDATE tbl_board
-    SET read = read + 1
-    WHERE boardId=#{boardId};
-</update>
+	<select id="getList" resultType="Blaze.devBoard.domain.Board">
+		SELECT
+		*
+		FROM tbl_board
+	</select>
+	<select id="getBoard" parameterType="Long"
+		resultType="Blaze.devBoard.domain.Board">
+		SELECT
+		*
+		FROM tbl_board where boardId=#{boardId};
+	</select>
+	<insert id="uploadBoard"
+		parameterType="Blaze.devBoard.domain.Board">
+		INSERT INTO tbl_board (title, content, name)
+		VALUES
+		(#{title}, #{content}, #{name});
+	</insert>
+	<update id="updateBoard"
+		parameterType="Blaze.devBoard.domain.Board">
+		UPDATE tbl_board
+		SET title=#{title}, content=#{content}
+		WHERE boardId=#{boardId};
+	</update>
+	<delete id="deleteBoard" parameterType="Long">
+		DELETE
+		FROM tbl_board
+		WHERE boardId=#{boardId};
+	</delete>
+	<update id="viewCount">
+		UPDATE tbl_board
+		SET read = read + 1
+		WHERE boardId=#{boardId};
+	</update>
 </mapper>
