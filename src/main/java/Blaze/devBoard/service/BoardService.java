@@ -26,7 +26,7 @@ public class BoardService {
         return boardMapper.getBoard(boardId); //PK가 boardID인 게시글의 내용을 반환
     }
 
-    @Transactional // 추가
+    @Transactional 
     public void uploadBoard(Board board) {
         boardMapper.uploadBoard(board);
     }
