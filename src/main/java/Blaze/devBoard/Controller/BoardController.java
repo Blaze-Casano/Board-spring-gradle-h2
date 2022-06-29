@@ -22,7 +22,8 @@ public class BoardController {
     public String Hello() {
         return "/boards/hello";
     }
-
+    
+    //model 은 객체
     
     @GetMapping("/test")
     public String test(Model model) {
@@ -40,7 +41,7 @@ public class BoardController {
     
     @GetMapping("/view")
     public String viewBoard(Model model, Long boardId) {
-        service.viewCount(boardId); 
+        service.viewCount(boardId); //조회수
         model.addAttribute("halo", service.getBoard(boardId));
 
         return "/boards/view";
@@ -48,7 +49,7 @@ public class BoardController {
     
     @GetMapping("/upload")
     public String uploadBoardForm(){
-        return "/boards/upload";
+        return "/boards/main";
     }
 
     @PostMapping("/upload")

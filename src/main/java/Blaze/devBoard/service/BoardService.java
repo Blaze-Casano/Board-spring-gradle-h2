@@ -1,7 +1,7 @@
 package Blaze.devBoard.service;
 
-import Blaze.devBoard.domain.Board;
 import Blaze.devBoard.Mapper.BoardMapper;
+import Blaze.devBoard.domain.Board;
 import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
