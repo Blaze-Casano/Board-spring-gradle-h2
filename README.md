@@ -1,4 +1,4 @@
-# Board-spring-gradle-h2
+## Board-spring-gradle-h2
 게시판 생성 테스트 
 
 http://localhost:8070/board/main
@@ -16,7 +16,7 @@ properties 에서 변경
 spring 버전이 2.5.7 이상일경우 properties에 패턴 추가.
 spring.mvc.pathmatch.matching-strategy=ant_path_matcher
 
-#새로운 환경에서 실행시 테이블 생성 필요
+### 새로운 환경에서 실행시 테이블 생성 필요
 
 
 CREATE TABLE tbl_board(
@@ -33,8 +33,8 @@ primary key(boardId)
 
 //작성시 /update 으로 직접 접속
 
-#Spring boot-security-JPA :: "register&login"
+## Spring boot-security-JPA :: "register&login"
 Spring Security에서 Password Storage 를 활용, 자동로그인 구현 및 JPA 리포지토리 에 대해 공부
 
-#Spring boot-mysql-vuejs :: Product CRUD
+## Spring boot-mysql-vuejs :: Product CRUD
 vue.js 의 CRUD 활용예에 대해 공부
