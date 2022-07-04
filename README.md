@@ -33,8 +33,8 @@ primary key(boardId)
 
 //작성시 /update 으로 직접 접속
 
-Spring boot-security-JPA :: "register&login"
+#Spring boot-security-JPA :: "register&login"
 Spring Security에서 Password Storage 를 활용, 자동로그인 구현 및 JPA 리포지토리 에 대해 공부
 
-Spring boot-mysql-vuejs :: Product CRUD
+#Spring boot-mysql-vuejs :: Product CRUD
 vue.js 의 CRUD 활용예에 대해 공부
