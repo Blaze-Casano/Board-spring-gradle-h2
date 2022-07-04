@@ -1,0 +1,10 @@
+Manifest-Version: 1.0
+Built-By: Casano Blaze
+Build-Jdk: 11.0.12
+Implementation-Title: crud-mysql-vuejs
+Implementation-Version: 1.0-SNAPSHOT
+Implementation-Vendor-Id: com.hellokoding.springboot
+Implementation-URL: https://projects.spring.io/spring-boot/#/spring-boot
+ -starter-parent/crud-mysql-vuejs
+Created-By: Maven Integration for Eclipse
+
